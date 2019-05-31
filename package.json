@@ -1,0 +1,29 @@
+{
+  "name": "workshop-testcafe",
+  "version": "0.0.1",
+  "description": "Project used with a workshop TestCafe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanschenk/workshop-testcafe.git"
+  },
+  "keywords": [
+    "workshop",
+    "testcafe",
+    "automation"
+  ],
+  "author": "Stefan Schenk <SWJ.Schenk@portofrotterdam.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stefanschenk/workshop-testcafe/issues"
+  },
+  "homepage": "https://github.com/stefanschenk/workshop-testcafe#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "testcafe": "^1.2.0",
+    "typescript": "^3.5.1"
+  }
+}
