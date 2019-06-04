@@ -1,8 +1,20 @@
+import { readFileSync } from "fs";
+import { mockJson, mockJsonWithParams } from "./content/mock-response";
 import { RequestHook, RequestMock } from "testcafe";
+
+/**
+ * This is an example of reading a javascript file from the content
+ * directory to be able to use it as a response in a RequestMock
+ */
+const keycloakJs = readFileSync(__dirname + "/content/fake-auth.js", "utf8");
 
 /**
  * With a RequestMock you can send you own response to a request
  * done to a specific url with a specific method
+ *
+ * In this example the body is null
+ * but you could return a json, a string, content from a javascript file. That's up to you.
+ * And you can write the body in this method, or import it from the content directory.
  */
 export const requestMock = RequestMock()
   .onRequestTo({ url: "", method: "" })

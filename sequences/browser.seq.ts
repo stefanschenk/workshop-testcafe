@@ -7,6 +7,8 @@ export class Browser {
    * Obtaining info from the browser not obtainable by standard testcafe functions.
    *
    * You can also use it to override methods on the window object...
+   * if you get warning about window in a ClientFunction, use
+   * (window as any) to prevent this
    */
   static getLocation = ClientFunction(() => document.location.href);
 
