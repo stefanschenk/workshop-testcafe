@@ -1,12 +1,18 @@
-import { Selector } from 'testcafe';
+import { Selector } from "testcafe";
 
 export class WelcomePO {
-    self: Selector;
-    constructor() {
-        this.self = Selector('#welcome-segment');
-    }
+  public self: Selector;
 
-    get header() {
-        return this.self.find('h2');
-    }
+  /**
+   * This is just the root component.
+   * Are there more components on the page to add to this PO?
+   * Which elements can you 'find' on this Selector.
+   */
+  constructor() {
+    this.self = Selector("#welcome-segment");
+  }
+
+  get header() {
+    return this.self.find("h2");
+  }
 }
