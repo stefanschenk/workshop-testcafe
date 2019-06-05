@@ -1,11 +1,5 @@
 import { Selector } from 'testcafe';
 
-class ContactsFromPO {
-    /**
-     * Create a page object for the contacts form segment.
-     */
-}
-
 export class ContactsPO {
     self: Selector;
     constructor() {
@@ -14,13 +8,7 @@ export class ContactsPO {
     
     /**
      * Create a page object for the contacts segment.
-     * Note that the contactsForm initiates a seperate class for the form
-     * 
-     * Make sure to use this method:
-     * 
-     * get contactsFrom() {
-     *     return new ContactsFromPO(this.self.find('form.ui.form'));
-     * }
+     * Note that the contactsForm initiates a seperate class for the form.
      */
 
     get successMessage() {
