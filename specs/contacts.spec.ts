@@ -9,8 +9,8 @@ fixture`Contacts`
     .beforeEach(async t => {
         await t
             /**
-             * The login is covered by using a Role in Testcafe.
-             * Take a look at user.seq.ts to find out how that works.
+             * The login can also be covered by using a Role in Testcafe.
+             * Check user.seq.ts
              */
             .useRole(User.contractsUser)
             /**
