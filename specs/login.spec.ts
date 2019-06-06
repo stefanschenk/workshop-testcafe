@@ -1,11 +1,7 @@
-import { LoginPO } from "../pages/login.page";
 import { WelcomePO } from "../pages/welcome.page";
 import { User } from "../sequences/user.seq";
 
-const form: LoginPO = new LoginPO(),
-  welcome: WelcomePO = new WelcomePO(),
-  username: string = "mr_contacts",
-  password: string = "1234Pass!";
+const welcome: WelcomePO = new WelcomePO();
 
 fixture`Authenticate`.page`http://localhost:3000`;
 
